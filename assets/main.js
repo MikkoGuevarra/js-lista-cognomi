@@ -9,11 +9,9 @@ listaCognomi.sort();
 // Stampare la lista dei cognomi in ordine alfabetico e comunicare all'utente la posizione in cui si trova il suo cognome (dopo averlo riordinato).
 //stampa lista in ordine alfabetico
 console.log(listaCognomi);
-var position = false;
 for (var i = 0; i < listaCognomi.length; i++) {
     var currentPosition = listaCognomi[i];
     if (currentPosition == cognomeUtente) {
-        position = true;
         console.log(cognomeUtente + " la tua posizione è " + (i + 1));
     }
 }
